@@ -1,7 +1,6 @@
-//cconst BASE_URL = 'https://join-439-default-rtdb.europe-west1.firebasedatabase.app/'; // main URL
-// const BASE_URL = 'https://join-contacts-fcc04-default-rtdb.europe-west1.firebasedatabase.app' // URL Oli
-const BASE_URL =
-  "https://test-project-9b5dc-default-rtdb.europe-west1.firebasedatabase.app/"; // URL Kevin
+//const BASE_URL = 'https://join-439-default-rtdb.europe-west1.firebasedatabase.app/'; // main URL
+const BASE_URL = 'https://join-contacts-fcc04-default-rtdb.europe-west1.firebasedatabase.app' // URL Oli
+// const BASE_URL ="https://test-project-9b5dc-default-rtdb.europe-west1.firebasedatabase.app/"; // URL Kevin
 
 /**
  * Fetches data from Firebase Realtime Database at a given path.
@@ -160,7 +159,7 @@ function pushTasks(loggedInUser, contacts) {
   let taskId = title.value + time;
   let subtasks = subtasksArr;
   let userData = getUserDataTasks(taskId, title, description, date, prioBtn, contacts, category, subtasks);
-    putData(path, userData, taskId);
+  putData(path, userData, taskId);
 }
 
 /**
